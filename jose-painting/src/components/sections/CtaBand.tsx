@@ -4,7 +4,7 @@ import { ArrowRightIcon } from "@/components/ui/icons";
 const cards = [
   {
     title: "Learn About Us",
-    description: "Locally owned, fully insured, and obsessed with the details.",
+    description: "Locally owned, detail-obsessed, and trusted by your neighbors.",
     href: "#about",
   },
   {

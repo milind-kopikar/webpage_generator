@@ -23,9 +23,6 @@ export function Footer() {
             <p className="mt-4 max-w-xs text-sm text-brand-200">
               {business.tagline}.
             </p>
-            <p className="mt-3 text-xs text-brand-300">
-              Licensed &amp; Insured · {business.licenseNumber}
-            </p>
           </div>
 
           {/* Nav */}

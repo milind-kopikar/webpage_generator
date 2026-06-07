@@ -20,14 +20,14 @@ const U = "https://images.unsplash.com";
 const img = (id: string, w = 1200) => `${U}/${id}?auto=format&fit=crop&w=${w}&q=80`;
 
 export const business: BusinessInfo = {
-  owner: "Jose Franco", // internal
-  name: "Jose Franco Painting and Services",
+  owner: "Jose Frank", // internal
+  name: "Jose Frank Painting and Services",
   logo: "/logo.png",
-  badgeLine: "Locally owned & operated  //  Licensed & Insured",
-  tagline: "Proudly serving Draper, Utah for over 15 years",
+  badgeLine: "Locally owned & operated",
+  tagline: "Proudly serving Utah and Salt Lake County for over 10 years",
   heroSubtext:
     "Reliable, detail-obsessed interior and exterior painting that brings your home or business to life — on time and on budget.",
-  yearsInBusiness: 15,
+  yearsInBusiness: 10,
   serviceArea: "Utah County & Salt Lake County",
 
   phone: "(385) 286-9521",
@@ -173,7 +173,7 @@ export const business: BusinessInfo = {
       location: "Mapleton, UT",
       rating: 5,
       quote:
-        "Got three quotes and Jose Franco Painting was the most thorough by far. The interior and exterior looks brand new and has held up beautifully.",
+        "Got three quotes and Jose Frank Painting was the most thorough by far. The interior and exterior looks brand new and has held up beautifully.",
     },
     {
       id: "t3",

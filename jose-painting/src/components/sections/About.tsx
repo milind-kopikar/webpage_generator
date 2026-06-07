@@ -5,7 +5,7 @@ import { CheckIcon } from "@/components/ui/icons";
 
 const highlights = [
   "Locally owned & operated",
-  "Licensed & fully insured",
+  "Detail-obsessed craftsmanship",
   "Clean, on-time, on-budget work",
   "Free, no-pressure estimates",
 ];

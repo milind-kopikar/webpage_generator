@@ -42,7 +42,7 @@ export function EstimateForm() {
       className="rounded-xl border border-brand-100 bg-white p-6 shadow-sm sm:p-8"
     >
       {/* FormSubmit configuration (hidden) */}
-      <input type="hidden" name="_subject" value="New estimate request — Jose Franco Painting" />
+      <input type="hidden" name="_subject" value="New estimate request — Jose Frank Painting" />
       <input type="hidden" name="_template" value="table" />
       <input type="hidden" name="_captcha" value="false" />
       {nextUrl && <input type="hidden" name="_next" value={nextUrl} />}

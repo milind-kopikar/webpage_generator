@@ -16,7 +16,7 @@ const oldStandard = Old_Standard_TT({
   display: "swap",
 });
 
-const description = `${business.name} provides professional interior, exterior, cabinet, and commercial painting across ${business.serviceArea}. Licensed, insured, and trusted for over ${business.yearsInBusiness} years. Free estimates.`;
+const description = `${business.name} provides professional interior, exterior, cabinet, and commercial painting across ${business.serviceArea}. Trusted by homeowners and businesses for over ${business.yearsInBusiness} years. Free estimates.`;
 
 export const metadata: Metadata = {
   title: {
