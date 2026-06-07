@@ -6,7 +6,10 @@ painter), built as the first concrete piece of **Project DhanGen** (see
 and is architected so the future DhanGen blocks (booking, payments, voice,
 WhatsApp) slot in without rewrites.
 
+**Live site:** https://jose-franco-painting.milindkopi.workers.dev
+
 **Stack:** Next.js 16 (App Router) · React 19 · TypeScript · Tailwind CSS v4.
+**Hosting:** Cloudflare Workers (via OpenNext), auto-deployed on push to `main`.
 
 ---
 
