@@ -36,3 +36,13 @@ next-env.d.ts
 
 # Vercel
 .vercel
+
+# Cloudflare / OpenNext build artifacts & local secrets
+.open-next/
+**/.open-next/
+.wrangler/
+**/.wrangler/
+.dev.vars
+**/.dev.vars
+cloudflare-env.d.ts
+**/cloudflare-env.d.ts

@@ -1,0 +1,15 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "jose-franco-painting",
+  "main": ".open-next/worker.js",
+  "compatibility_date": "2024-12-30",
+  // nodejs_compat: lets Next.js server code use Node APIs on Workers.
+  // global_fetch_strictly_public: required by the OpenNext asset/fetch handling.
+  "compatibility_flags": ["nodejs_compat", "global_fetch_strictly_public"],
+  "assets": {
+    "directory": ".open-next/assets",
+    "binding": "ASSETS"
+  }
+  // Future DhanGen bindings (KV/R2/D1/secrets for booking, payments, WhatsApp,
+  // voice) get added here as those blocks are built.
+}
