@@ -20,11 +20,12 @@ import { ArrowRightIcon } from "@/components/ui/icons";
  * so submissions are persisted, the English job text is translated to Spanish,
  * and Jose is alerted by email — and eventually by SMS/WhatsApp to his phone.
  */
-// Primary recipient = the FormSubmit "form owner" that receives the one-time
-// activation email (kept as Milind's address so it can be activated/debugged).
-// CC = Jose; he receives every lead too. Both get the identical email + photos.
-const ESTIMATE_RECIPIENT = "milindkopi@gmail.com";
-const ESTIMATE_CC = "paraisotravek@gmail.com"; // Jose — VERIFY spelling (travek vs travel)
+// Primary recipient = Jose. He is also the FormSubmit "form owner", so the
+// one-time activation email goes to THIS inbox (paraisotravek@gmail.com).
+// ESTIMATE_CC = Milind's debug copy. NOTE: FormSubmit has no _bcc field, so
+// this is a CC (visible in the email header), not a true blind copy.
+const ESTIMATE_RECIPIENT = "paraisotravek@gmail.com"; // Jose — VERIFY spelling (travek vs travel)
+const ESTIMATE_CC = "milindkopi@gmail.com"; // debug copy (CC, not BCC)
 const FORMSUBMIT_ENDPOINT = `https://formsubmit.co/${ESTIMATE_RECIPIENT}`;
 
 const fieldClass =
