@@ -20,7 +20,11 @@ import { ArrowRightIcon } from "@/components/ui/icons";
  * so submissions are persisted, the English job text is translated to Spanish,
  * and Jose is alerted by email — and eventually by SMS/WhatsApp to his phone.
  */
-const ESTIMATE_RECIPIENT = "milindkopi@gmail.com"; // TODO: change to Jose's email
+// Primary recipient = the FormSubmit "form owner" that receives the one-time
+// activation email (kept as Milind's address so it can be activated/debugged).
+// CC = Jose; he receives every lead too. Both get the identical email + photos.
+const ESTIMATE_RECIPIENT = "milindkopi@gmail.com";
+const ESTIMATE_CC = "paraisotravek@gmail.com"; // Jose — VERIFY spelling (travek vs travel)
 const FORMSUBMIT_ENDPOINT = `https://formsubmit.co/${ESTIMATE_RECIPIENT}`;
 
 const fieldClass =
@@ -45,6 +49,7 @@ export function EstimateForm() {
       <input type="hidden" name="_subject" value="New estimate request — Jose Frank Painting" />
       <input type="hidden" name="_template" value="table" />
       <input type="hidden" name="_captcha" value="false" />
+      <input type="hidden" name="_cc" value={ESTIMATE_CC} />
       {nextUrl && <input type="hidden" name="_next" value={nextUrl} />}
       {/* Honeypot to deter spam bots */}
       <input type="text" name="_honey" className="hidden" tabIndex={-1} autoComplete="off" />
