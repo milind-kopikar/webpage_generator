@@ -1,0 +1,38 @@
+# Dependencies
+node_modules/
+**/node_modules/
+.pnp
+.pnp.*
+
+# Next.js build output
+.next/
+**/.next/
+out/
+**/out/
+build/
+
+# Env / secrets
+.env
+.env.*
+!.env.example
+
+# Local reference material (downloaded site snapshot, thumbnails) — not published
+design/
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# OS / editor
+.DS_Store
+Thumbs.db
+*.pem
+
+# TypeScript / Next
+*.tsbuildinfo
+next-env.d.ts
+
+# Vercel
+.vercel

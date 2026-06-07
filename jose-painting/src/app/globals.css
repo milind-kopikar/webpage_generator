@@ -1,0 +1,60 @@
+@import "tailwindcss";
+
+/*
+ * Theme tokens (Tailwind v4 CSS-based config).
+ * Palette derived from the Jose Frank logo: deep navy (brand) + teal (accent).
+ * Type pairing mirrors the reference site's clean aesthetic:
+ *   - Old Standard TT (serif) for display headings
+ *   - Cabin (sans) for body / UI
+ */
+@theme {
+  --color-brand-50: #eef3f8;
+  --color-brand-100: #dce7f1;
+  --color-brand-200: #b9cde0;
+  --color-brand-300: #8eabc9;
+  --color-brand-400: #5d83aa;
+  --color-brand-500: #2f5d8a;
+  --color-brand-600: #244a73;
+  --color-brand-700: #1d3a5f; /* logo navy */
+  --color-brand-800: #173351;
+  --color-brand-900: #112940;
+
+  --color-accent-50: #e9faf8;
+  --color-accent-100: #c9f2ee;
+  --color-accent-200: #95e5dd;
+  --color-accent-300: #5bd3c8;
+  --color-accent-400: #2bbcae;
+  --color-accent-500: #17a398; /* logo teal */
+  --color-accent-600: #128c83;
+  --color-accent-700: #0f7268;
+  --color-accent-800: #0d5b54;
+  --color-accent-900: #0b4843;
+
+  /* Warm off-white surface used for alternating sections */
+  --color-sand-50: #faf8f4;
+  --color-sand-100: #f3efe8;
+}
+
+/* Font variables are wired from next/font in layout.tsx; `inline` lets the
+   runtime CSS variables resolve into Tailwind's font utilities. */
+@theme inline {
+  --font-sans: var(--font-cabin), system-ui, sans-serif;
+  --font-display: var(--font-old-standard), Georgia, "Times New Roman", serif;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 5rem; /* offset sticky header for in-page anchors */
+}
+
+body {
+  background: #ffffff;
+  color: var(--color-brand-900);
+  font-family: var(--font-sans);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
